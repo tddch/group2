@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/tui"
+     android:icon="@drawable/tui"
+    android:title="每日推荐"/>
+    <item android:id="@+id/fei"
+        android:icon="@drawable/ic_baseline_emoji_objects_24"
+        android:title="飞花令"/>
+    <item android:id="@+id/shi"
+        android:icon="@drawable/tui"
+        android:title="诗歌社群"/>
+    <item android:id="@+id/pai"
+        android:icon="@drawable/tui"
+        android:title="排行榜"/>
+    <item android:id="@+id/vip"
+        android:icon="@drawable/tui"
+        android:title="会员专区"/>
+</menu>

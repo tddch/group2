@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_4_5"
+        app:cardElevation="@dimen/dp_4_5"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:padding="@dimen/dp_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:padding="@dimen/dp_6"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52"
+                android:id="@+id/tool">
+                <androidx.appcompat.widget.SearchView
+                    app:iconifiedByDefault="false"
+                    app:queryHint="搜索诗人名字 诗歌关键字"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:background="@drawable/search"
+                    android:layout_width="@dimen/dp_260"
+                    android:layout_height="@dimen/dp_40"/>
+                <ImageView
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_25"
+                    android:src="@drawable/ic_baseline_emoji_objects_24"/>
+                <ImageView
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_25"
+                    android:src="@drawable/ic_baseline_assignment_turned_in_24"/>
+
+            </androidx.appcompat.widget.Toolbar>
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/dp_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_150"
+                    android:src="@drawable/one"/>
+            </androidx.cardview.widget.CardView>
+            <com.google.android.material.tabs.TabLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="#FFFFFF"
+                app:tabSelectedTextColor="#CF8A4F"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_85"
+                android:id="@+id/tab_head">
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+
+                    android:icon="@drawable/tui"
+                    android:text="每日推荐"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+
+                    android:icon="@drawable/fei"
+                    android:text="飞花令"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+
+                    android:icon="@drawable/shige"
+                    android:text="诗歌社群"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+
+                    android:icon="@drawable/paihang"
+                    android:text="排行榜"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+
+                    android:icon="@drawable/vip"
+                    android:text="会员专享"/>
+            </com.google.android.material.tabs.TabLayout>
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/pktxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_25"
+                    android:textSize="@dimen/dp_20"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="诗歌群PK"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorAccent"
+                    android:text="08-10日晚8:00开始"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_25"/>
+                <ImageView
+                    android:id="@+id/pkimag"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_160"
+                    android:layout_below="@id/pktxt"
+                    android:src="@drawable/pk"/>
+                <Button
+                    android:textColor="#FFFFFF"
+                    android:text="丁香诗社"
+                    android:id="@+id/btn_ding"
+                    android:layout_marginLeft="@dimen/dp_45"
+                    android:layout_width="@dimen/dp_75"
+                    android:background="@drawable/btn_ding"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_below="@id/pkimag"/>
+                <Button
+                    android:layout_width="@dimen/dp_75"
+                    android:background="@drawable/btn_yueji"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_below="@id/pkimag"
+                    android:textColor="#FFFFFF"
+                    android:text="月季诗社"
+                    android:layout_marginLeft="@dimen/dp_120"
+                    android:layout_toRightOf="@id/btn_ding"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_ding"
+                    android:text="这两个诗社你更看好谁"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_4_5"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/dp_4_5"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
