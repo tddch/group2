@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/image_avatar_mp4"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_name_mp4"
+        android:textStyle="bold"
+        android:text="XX"
+        android:layout_toRightOf="@id/image_avatar_mp4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_feeds_mp4"
+        android:text="XXXXX"
+        android:layout_below="@id/image_avatar_mp4"/>
+<cn.jzvd.JzvdStd
+    android:layout_below="@id/txt_feeds_mp4"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:id="@+id/jz_url_mp4"/>
+</RelativeLayout>

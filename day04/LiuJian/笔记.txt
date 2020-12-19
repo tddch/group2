@@ -1,0 +1,71 @@
+什么是Git?
+很多人会把Git和GitHub搞混淆，Git是一个版本控制的工具，GitHub是一个网站，只不过是基于Git的。
+
+为什么要使用版本管理（控制）工具？
+1.方便查看项目进度
+2.发现代码下不下去，可以撤销重新写（版本回退）
+3.项目分工开发，项目合并（分支与合并）
+
+分布式：至少有两个仓库（本地仓库+远程仓库）
+集中式：只有一个本地仓库
+
+Git工具：分布式的版本控制系统
+Svn工具：集中式的版本控制系统
+
+git分为：
+工作空间（目录）--git add .--> 暂存区 --git commit -m"注释"--> 本地仓库 --git push--> 远程仓库(github,gitee)
+
+git使用：
+配置git用户名和邮箱   git config user.name（email）
+
+git初始化命令：
+
+https://www.jianshu.com/p/1503ffd70a57
+
+git init    # 初始化一个git项目
+
+git add 文件名称   # 告诉git，管理某个文件（追踪某个文件）
+
+git add .(点)    # 添加当前目录下的所有文件
+
+git status   # 查看当前文件的git状态（red代表未提交到暂缓区，green代表已经提交到暂停区但没有提交到本地仓库）
+
+git commit -m "注释"   # 提交版本（提交到本地仓库）
+
+git reflog     #查看每次提交到本地仓库的版本号
+
+git reset --hard 版本号前几位 //回滚到特定版本
+
+git reset --hard HEAD 表示当前版本    //HEAD^上一个版本  //HEAD^^上上一个版本  //HEAD~100前第一个版本
+
+ssh-keygen -t rsa -C "floveandroid@sina.com"      //设置关联远程仓库，生成ssh密钥
+
+git remote add origin 网址     //git关联远程仓库命令
+
+git push -u origin master        //把本地仓库的项目提交到远程仓库
+
+git pull origin main(远程分支名) --allow-unrelated-histories      //拉取代码
+
+（如果上面拉取代码的方式不行，只需要创建一个空目录 然后通过 git clone https://github.com/Thierry1/Android-H2003B.git  命令 将远程仓库里面所有的文件 包括readme.md文件都下载到本地工作空间然后把项目复制到这个目录里面，先提交到暂存区，再提交到本地仓库， 然后一并再提交到远程库）
+
+创建+切换分支：git checkout –b 分支名
+
+切换分支：git checkout 分支名
+
+查看分支：git branch
+
+创建分支：git branch name
+
+删除分支：git branch –d name
+
+切换到主分支然后合并子分支
+
+合并某分支到当前分支：git merge 子分支
+
+注意：第一天进公司，拿到仓库地址不管远程仓库有没有代码，先把远程仓库的分支克隆到本地，然后切换到子分支，然后在子分支里面写代码，修复bug   实现一个功能 提交到本地仓库一次，晚上下班之前再切换到主分支，然后合并子分支，最后提交到远程仓库   git pull origin main(远程分支名) --allow-unrelated-histories。以后到公司上班，早上第一件事 ，先从远程仓库拉取代码，拉取到代码之后，再切换到子分支 然后一实现功能，修复bug 实现一个功能，提交本地仓库一次，晚上下班之间再切换到主分支， 然后合并子分支，最后提交到远程仓库。
+
+
+
+git本地仓库初始化、git与github的使用：
+
+https://blog.csdn.net/wuxiao18/article/details/97785442
