@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_item1"
+        android:icon="@drawable/shou"
+        android:title="首页"></item>
+
+    <item
+        android:id="@+id/bottom_item2"
+        android:icon="@drawable/bi"
+        android:title="写诗"></item>
+
+
+    <item
+        android:id="@+id/bottom_item3"
+        android:icon="@drawable/xiang"
+        android:title="传图"></item>
+
+
+    <item
+        android:id="@+id/bottom_item4"
+        android:icon="@drawable/zuo"
+        android:title="作品"></item>
+
+
+    <item
+        android:id="@+id/bottom_item5"
+        android:icon="@drawable/wo"
+        android:title="我的"></item>
+
+</menu>
