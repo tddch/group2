@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+        android:hint="搜索诗人名字 诗歌关键词"
+        android:background="@drawable/shou"
+        android:layout_width="@dimen/x512"
+        android:layout_height="@dimen/y75"/>
+        <ImageView
+
+            android:background="@drawable/bar_search_normal"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginLeft="@dimen/x600"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x45"/>
+        <ImageView
+            android:background="@drawable/bar_search_normal"
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginLeft="@dimen/x670"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x38"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_rec"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
