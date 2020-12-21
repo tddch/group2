@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/x33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvt1"
+            android:text="诗歌群PK"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/x30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvt2"
+            android:text="08-01日晚8:00开始"
+            android:textSize="@dimen/x20"
+            android:layout_marginLeft="@dimen/x480"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/img11"
+            android:background="@drawable/a2"
+            android:layout_marginTop="@dimen/x50"
+            android:layout_width="@dimen/x660"
+            android:layout_height="@dimen/y460"/>
+        <Button
+            android:id="@+id/btn_an"
+            android:text="丁香诗社"
+            android:background="@drawable/home1"
+            android:layout_marginTop="@dimen/x490"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_an1"
+            android:text="月季诗社"
+            android:background="@drawable/home2"
+            android:layout_marginTop="@dimen/x490"
+            android:layout_marginLeft="@dimen/x510"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvt3"
+            android:text="这两个诗社你更看好谁"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/x570"
+            android:layout_marginLeft="@dimen/x220"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

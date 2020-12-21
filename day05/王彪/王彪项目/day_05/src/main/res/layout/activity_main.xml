@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:background="#FDFDFD"
+        android:gravity="center"
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sear"
+            android:layout_width="@dimen/dp_265"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_20"
+            app:iconifiedByDefault="false"
+            app:queryHint="搜索平台诗人名字、诗歌关键词">
+
+        </androidx.appcompat.widget.SearchView>
+
+        <ImageView
+            android:id="@+id/ling"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/sear"
+            android:src="@drawable/ling" />
+
+        <ImageView
+            android:id="@+id/rili"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/ling"
+            android:src="@drawable/rili" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_main"
+        android:layout_width="@dimen/dp_348"
+        android:layout_height="@dimen/dp_272"
+        android:layout_below="@id/con">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navi_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y110"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:itemTextColor="#999999"
+        app:menu="@menu/bottom_navi_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
