@@ -1,0 +1,62 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mymvp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\little\MyMvp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\little\MyMvp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:4:1-62
+11-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:4:18-60
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[cn.jzvd:jiaozivideoplayer:7.5.0] C:\Users\86181\.gradle\caches\transforms-2\files-2.1\5ca2f0a0940533467d77a1e3aca210bc\jetified-jiaozivideoplayer-7.5.0\AndroidManifest.xml:11:5-79
+12-->[cn.jzvd:jiaozivideoplayer:7.5.0] C:\Users\86181\.gradle\caches\transforms-2\files-2.1\5ca2f0a0940533467d77a1e3aca210bc\jetified-jiaozivideoplayer-7.5.0\AndroidManifest.xml:11:22-76
+13
+14    <application
+14-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:5:5-20:19
+15        android:name="com.example.mymvp.app.Mapp"
+15-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:6:9-33
+16        android:allowBackup="true"
+16-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:7:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.3.1] C:\Users\86181\.gradle\caches\transforms-2\files-2.1\3b8225f248a9c0010b2aae96eee5bb07\core-1.3.1\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:8:9-43
+20        android:label="@string/app_name"
+20-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:9:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:10:9-54
+22        android:supportsRtl="true"
+22-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:11:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:12:9-40
+25        <activity android:name="com.example.mymvp.mvp.ui.MainActivity" >
+25-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:13:9-19:20
+25-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:13:19-54
+26            <intent-filter>
+26-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:14:13-18:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:15:17-69
+27-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:15:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:17:17-77
+29-->D:\little\MyMvp\app\src\main\AndroidManifest.xml:17:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity
+32-->[com.github.dfqin:grantor:1.1.0] C:\Users\86181\.gradle\caches\transforms-2\files-2.1\c62a9704e28d16581163490eca667aa9\jetified-grantor-1.1.0\AndroidManifest.xml:15:9-17:55
+33            android:name="com.github.dfqin.grantor.PermissionActivity"
+33-->[com.github.dfqin:grantor:1.1.0] C:\Users\86181\.gradle\caches\transforms-2\files-2.1\c62a9704e28d16581163490eca667aa9\jetified-grantor-1.1.0\AndroidManifest.xml:16:13-71
+34            android:theme="@style/GrantorNoDisplay" />
+34-->[com.github.dfqin:grantor:1.1.0] C:\Users\86181\.gradle\caches\transforms-2\files-2.1\c62a9704e28d16581163490eca667aa9\jetified-grantor-1.1.0\AndroidManifest.xml:17:13-52
+35    </application>
+36
+37</manifest>
