@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/finfrag_tool">
+    <TextView
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="发现"/>
+</androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        app:tabIndicatorHeight="0dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_find_header">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabitem_one"
+            android:text="袍子"
+            android:icon="@drawable/paozi"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabitem_two"
+            android:text="社团"
+            android:icon="@drawable/shetuan"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabitem_three"
+            android:text="袍子"
+            android:icon="@drawable/paihang"/>
+
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

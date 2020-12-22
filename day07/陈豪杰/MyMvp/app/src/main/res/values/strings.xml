@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyMvp</string>
+    <string name="connec_exception" >网络异常</string>
+    <string name="jsonparse_exception">数据解析异常</string>
+    <string name="ssl_excetion">ssl证书异常</string>
+    <string name="complete">网络请求成功了</string>
+    <string name="main_home_tit" >首页</string>
+    <string name="main_find_tit">发现</string>
+    <string name="main_add_tit" />
+    <string name="main_shop_tit">商城</string>
+    <string name="main_mySelf_tit">我的</string>
+</resources>
