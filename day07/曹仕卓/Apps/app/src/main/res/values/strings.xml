@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shixun4</string>
+    <string name="connec_exception">网络链接异常</string>
+    <string name="json_parse_exception">解析异常</string>
+    <string name="ssl_exception">证书异常</string>
+    <string name="complete" />
+</resources>

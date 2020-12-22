@@ -1,0 +1,57 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mymvp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->F:\code\MyMVP\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->F:\code\MyMVP\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:4:5-66
+11-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:5:5-21:19
+14        android:name="com.example.mymvp.mvp.base.App"
+14-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:6:9-37
+15        android:allowBackup="true"
+15-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:7:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.1] D:\.gradle\caches\transforms-2\files-2.1\3b8225f248a9c0010b2aae96eee5bb07\core-1.3.1\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:8:9-43
+20        android:label="@string/app_name"
+20-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:9:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:10:9-54
+22        android:supportsRtl="true"
+22-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:11:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:12:9-40
+25        <activity android:name="com.example.mymvp.mvp.base.BaseActivity" />
+25-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:13:9-68
+25-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:13:19-56
+26        <activity android:name="com.example.mymvp.mvp.mvp.ui.activity.MainActivity" >
+26-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:14:9-20:20
+26-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:14:19-67
+27            <intent-filter>
+27-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:15:13-19:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:16:17-69
+28-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:16:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:18:17-77
+30-->F:\code\MyMVP\app\src\main\AndroidManifest.xml:18:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>
