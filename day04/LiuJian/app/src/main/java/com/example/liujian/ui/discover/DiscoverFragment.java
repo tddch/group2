@@ -1,10 +1,14 @@
 package com.example.liujian.ui.discover;
 
 import android.content.Intent;
-import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -12,19 +16,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.example.liujian.R;
 import com.example.liujian.base.BaseFragment;
 import com.example.liujian.bean.DiscoverTabBean;
 import com.example.liujian.bean.DiscoverTopicBean;
 import com.example.liujian.inesenter.discover.IDiscover;
 import com.example.liujian.presnter.tongpao.discover.DiscoverPresenter;
+import com.example.liujian.ui.discover.baidu.BaiduActivity;
 import com.example.liujian.ui.discover.paihang.PaiHangActivity;
 import com.example.liujian.ui.discover.paozi.PaoZiActivity;
 import com.example.liujian.ui.discover.shetuan.SheTuanActivity;
@@ -55,10 +53,17 @@ public class DiscoverFragment extends BaseFragment<DiscoverPresenter> implements
     TabLayout tabDiscover;
     @BindView(R.id.vp_discover)
     ViewPager vpDiscover;
+    @BindView(R.id.iv_baidu)
+    ImageView ivBaidu;
+    @BindView(R.id.tv_baidu)
+    TextView tvBaidu;
+    @BindView(R.id.con_img)
+    ConstraintLayout conImg;
     private ArrayList<DiscoverTopicBean.DataBean> topicList;
     private TopicRvAdapter adapter;
     private ArrayList<Fragment> fragments;
     private ArrayList<String> tabTitle;
+
     @Override
     public int getLayout() {
         return R.layout.fragment_discover;
@@ -69,18 +74,20 @@ public class DiscoverFragment extends BaseFragment<DiscoverPresenter> implements
         initTopic();
         initTab();
     }
+
     private void initTab() {
         fragments = new ArrayList<>();
         tabTitle = new ArrayList<>();
     }
 
     private void initTopic() {
-        rvTopic.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false));
+        rvTopic.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
 
         topicList = new ArrayList<>();
         adapter = new TopicRvAdapter(topicList, getActivity());
         rvTopic.setAdapter(adapter);
     }
+
     @Override
     public DiscoverPresenter createPresenter() {
         return new DiscoverPresenter(this);
@@ -102,7 +109,7 @@ public class DiscoverFragment extends BaseFragment<DiscoverPresenter> implements
     @Override
     public void getTabBean(DiscoverTabBean tabBean) {
         Log.e("TAG", "getTabBean: " + tabBean.toString());
-        for (int i = 0; i < tabBean.getData().size()-1; i++) {
+        for (int i = 0; i < tabBean.getData().size() - 1; i++) {
             fragments.add(new TabRvFragment(tabBean.getData().get(i).getType()));
             tabTitle.add(tabBean.getData().get(i).getName());
         }
@@ -111,6 +118,8 @@ public class DiscoverFragment extends BaseFragment<DiscoverPresenter> implements
         vpDiscover.setAdapter(new MyAdapter(getActivity().getSupportFragmentManager()));
         tabDiscover.setupWithViewPager(vpDiscover);
     }
+
+
 
     private class MyAdapter extends FragmentPagerAdapter {
         public MyAdapter(FragmentManager fm) {
@@ -136,7 +145,7 @@ public class DiscoverFragment extends BaseFragment<DiscoverPresenter> implements
     }
 
 
-    @OnClick({R.id.iv_paozi, R.id.iv_shetuan, R.id.iv_paihang, R.id.tv_paozi, R.id.tv_shetuan, R.id.tv_paihang})
+    @OnClick({R.id.iv_paozi, R.id.iv_shetuan, R.id.iv_paihang, R.id.tv_paozi, R.id.tv_shetuan, R.id.tv_paihang,R.id.iv_baidu, R.id.tv_baidu})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_paozi:
@@ -157,6 +166,12 @@ public class DiscoverFragment extends BaseFragment<DiscoverPresenter> implements
                 break;
             case R.id.tv_paihang:
                 startActivity(new Intent(getActivity(), SheTuanActivity.class));
+                break;
+            case R.id.iv_baidu:
+                startActivity(new Intent(getActivity(), BaiduActivity.class));
+                break;
+            case R.id.tv_baidu:
+                startActivity(new Intent(getActivity(), BaiduActivity.class));
                 break;
         }
     }

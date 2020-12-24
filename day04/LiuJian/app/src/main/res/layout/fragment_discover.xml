@@ -43,10 +43,8 @@
                             android:id="@+id/iv_paozi"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:layout_marginHorizontal="50dp"
                             android:layout_marginTop="14dp"
                             android:background="@color/color_gray"
-                            android:paddingHorizontal="200dp"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintRight_toLeftOf="@id/iv_shetuan"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +55,6 @@
                             android:layout_height="60dp"
                             android:layout_marginTop="14dp"
                             android:background="@color/color_gray"
-                            android:paddingHorizontal="200dp"
                             app:layout_constraintLeft_toRightOf="@id/iv_paozi"
                             app:layout_constraintRight_toLeftOf="@id/iv_paihang"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -66,11 +63,20 @@
                             android:id="@+id/iv_paihang"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:layout_marginHorizontal="50dp"
                             android:layout_marginTop="14dp"
                             android:background="@color/color_gray"
-                            android:paddingHorizontal="200dp"
                             app:layout_constraintLeft_toRightOf="@id/iv_shetuan"
+
+                            app:layout_constraintRight_toLeftOf="@id/iv_baidu"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/iv_baidu"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/color_gray"
+                            app:layout_constraintLeft_toRightOf="@id/iv_paihang"
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -112,7 +118,18 @@
                             app:layout_constraintEnd_toEndOf="@+id/iv_paihang"
                             app:layout_constraintStart_toStartOf="@+id/iv_paihang"
                             app:layout_constraintTop_toBottomOf="@+id/iv_paihang" />
-
+                        <TextView
+                            android:id="@+id/tv_baidu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:text="百度地图"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/iv_baidu"
+                            app:layout_constraintStart_toStartOf="@+id/iv_baidu"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_baidu" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
