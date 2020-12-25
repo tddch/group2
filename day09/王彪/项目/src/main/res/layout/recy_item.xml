@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/recy_img"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_100" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp_20"
+        android:id="@+id/recy_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recy_img"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp_20"
+        android:id="@+id/recy_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recy_title"
+        android:textSize="5sp" />
+
+    <TextView
+        android:id="@+id/recy_time"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recy_title"
+        android:layout_toRightOf="@+id/recy_text"
+        android:textSize="5sp" />
+
+</RelativeLayout>
