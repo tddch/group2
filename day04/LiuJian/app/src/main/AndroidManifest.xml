@@ -21,33 +21,39 @@
 
     <application
         android:name=".app.MyApp"
-        android:useEmbeddedDex="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:useEmbeddedDex="true"
         android:usesCleartextTraffic="true">
-
-        <service android:name="com.baidu.location.f"
-            android:enabled="true"
-            android:process=":remote"/>
-
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="6OMQGQ0v00kTZpYZYTkPn2ikv1HjFuII" />
-        <activity android:name=".ui.discover.baidu.BaiduActivity"></activity>
-        <activity android:name=".ui.discover.paihang.PaiHangActivity" />
-        <activity android:name=".ui.discover.shetuan.SheTuanActivity" />
-        <activity android:name=".ui.discover.paozi.PaoZiActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".baidu.BaiduActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ButtonActivity">
+
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="6OMQGQ0v00kTZpYZYTkPn2ikv1HjFuII" />
+
+        <activity android:name=".ui.discover.baidu.BaiduActivity" />
+        <activity android:name=".ui.discover.paihang.PaiHangActivity" />
+        <activity android:name=".ui.discover.shetuan.SheTuanActivity" />
+        <activity android:name=".ui.discover.paozi.PaoZiActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
