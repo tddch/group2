@@ -1,0 +1,3 @@
+include ':aaaaaaaa'
+include ':app'
+rootProject.name = "1227map"
