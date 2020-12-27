@@ -1,0 +1,3 @@
+include ':zuoye'
+include ':app'
+rootProject.name = "Bddt"
