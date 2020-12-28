@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv1"
+    android:text="出行必备"
+    android:textSize="@dimen/x50"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/x30"
+    android:layout_marginLeft="@dimen/x30"/>
+    <ImageView
+        android:id="@+id/item2_image"
+        android:layout_width="@dimen/x335"
+        android:layout_height="@dimen/x132"
+        android:background="@drawable/b"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/item2_img"
+        android:layout_width="@dimen/x335"
+        android:layout_height="@dimen/x132"
+        android:background="@drawable/c"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="@dimen/x365"/>
+
+</RelativeLayout>

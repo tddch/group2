@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv3"
+        android:text="国内攻略"
+        android:textSize="@dimen/x50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_marginLeft="@dimen/x30"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:text="查看更多"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="@dimen/x30"
+        android:layout_marginTop="@dimen/x70"
+        android:layout_marginLeft="@dimen/x600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/item4_image"
+        android:background="@drawable/f"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x200"
+        android:layout_marginTop="80dp"/>
+    <ImageView
+        android:id="@+id/item4_img"
+        android:background="@drawable/g"
+        android:layout_width="@dimen/x200"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="@dimen/x250"
+        android:layout_height="@dimen/x200"/>
+    <ImageView
+        android:id="@+id/item4_iv"
+        android:background="@drawable/h"
+        android:layout_width="@dimen/x200"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="@dimen/x480"
+        android:layout_height="@dimen/x200"/>
+</RelativeLayout>
